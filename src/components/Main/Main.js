@@ -1,15 +1,17 @@
+import './Main.css';
+
 export default function Main() {
   return (
     <main>
       <form action="">
-        <label htmlFor="input__text"></label>
+        <label htmlFor="input__text">Motto</label>
         <input
           type="text"
           id="input__text"
           name="input__text"
           className="input__text"
         />
-        <label htmlFor="input__textarea"></label>
+        <label htmlFor="input__textarea">Notes</label>
         <textarea
           name="input__textarea"
           className="input__textarea"
