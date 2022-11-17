@@ -2,16 +2,20 @@
   font-family: 'Quicksand';
   src: url('./assets/Quicksand/static/Quicksand-Regular.ttf');
 }
-@font-face {
-  font-family: 'Quicksand-Medium';
-  src: url('./assets/Quicksand/static/Quicksand-Medium.ttf');
-}
+
 @font-face {
   font-family: 'Quicksand-Light';
   src: url('./assets/Quicksand/static/Quicksand-Light.ttf');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Quicksand;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 75%;
+  align-content: center;
 }
