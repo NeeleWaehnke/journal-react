@@ -37,7 +37,11 @@ export default function Main() {
           <span className="tab__badge">1</span>
         </button>
       </div>
-      <section className="entries"></section>
+      <section className="entries">
+        <h5>date</h5>
+        <h4>Title</h4>
+        <p>Notes</p>
+      </section>
     </main>
   );
 }
