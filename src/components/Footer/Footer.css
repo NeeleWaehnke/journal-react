@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../../assets/Quicksand/static/Quicksand-Regular.ttf');
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 3em;
+  bottom: 0;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  font-family: Quicksand;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  background-color: #280003;
+  color: white;
+}

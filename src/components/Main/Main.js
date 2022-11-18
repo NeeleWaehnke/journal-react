@@ -2,16 +2,20 @@ import './Main.css';
 
 export default function Main() {
   return (
-    <main>
-      <form action="">
-        <label htmlFor="input__text">Motto</label>
+    <main className="main">
+      <form action="" className="form">
+        <label htmlFor="input__text" className="label">
+          Motto
+        </label>
         <input
           type="text"
           id="input__text"
           name="input__text"
           className="input__text"
         />
-        <label htmlFor="input__textarea">Notes</label>
+        <label htmlFor="input__textarea" className="label">
+          Notes
+        </label>
         <textarea
           name="input__textarea"
           className="input__textarea"
@@ -23,18 +27,17 @@ export default function Main() {
           Create
         </button>
       </form>
-      <section className="entries">
-        <div className="entries__tab">
-          <button>
-            All Entries
-            <span className="tab__badge">3</span>
-          </button>
-          <button>
-            Favorites
-            <span className="tab__badge">1</span>
-          </button>
-        </div>
-      </section>
+      <div className="tabs">
+        <button>
+          All Entries
+          <span className="tab__badge">3</span>
+        </button>
+        <button>
+          Favorites
+          <span className="tab__badge">1</span>
+        </button>
+      </div>
+      <section className="entries"></section>
     </main>
   );
 }
