@@ -12,23 +12,3 @@
   font-family: Quicksand-Light;
   display: block;
 }
-
-.form {
-  display: block;
-}
-
-.input__text {
-  display: block;
-  width: 100%;
-  margin: 1em 0 2em 0;
-}
-
-.input__textarea {
-  display: block;
-  width: 100%;
-  margin: 1em 0 2em 0;
-}
-
-.label {
-  font-size: 17px;
-}
