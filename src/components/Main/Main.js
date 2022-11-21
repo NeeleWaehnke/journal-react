@@ -1,6 +1,6 @@
 import './Main.css';
-import Entryform from './Entry-form/Entryform';
-import Entries from './Entries/Entries';
+import Entryform from '../Entry-form/Entryform';
+import Entries from '../Entries/Entries';
 
 export default function Main() {
   return (

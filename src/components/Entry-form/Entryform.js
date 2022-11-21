@@ -3,7 +3,7 @@ import './Entryform.css';
 export default function Entryform() {
   return (
     <>
-      <h2> New Entry </h2>
+      <h2 className="entryform__title">New Entry</h2>
       <form action="" className="form">
         <label htmlFor="input__text" className="label">
           Motto
