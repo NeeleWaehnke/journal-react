@@ -1,12 +1,12 @@
 import './Main.css';
 import Entryform from '../Entry-form/Entryform';
-import Entries from '../Entries/Entries';
+import EntriesSection from '../Entries-Section/EntriesSection';
 
 export default function Main() {
   return (
     <main className="main">
       <Entryform />
-      <Entries />
+      <EntriesSection />
     </main>
   );
 }

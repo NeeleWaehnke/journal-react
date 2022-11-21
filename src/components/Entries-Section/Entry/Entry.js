@@ -1,7 +1,7 @@
-import './EntriesSection.css';
+import './Entry.css';
 import FavouriteButton from '../FavouriteButton/FavouriteButton';
 
-export default function EntriesSection({ date, motto, notes }) {
+export default function Entry({ date, motto, notes }) {
   return (
     <section className="entry__section">
       <p className="entry__date">{date}</p>

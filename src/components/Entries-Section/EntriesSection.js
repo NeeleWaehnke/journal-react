@@ -1,12 +1,12 @@
-import './Entries.css';
+import './EntriesSection.css';
 import Tabs from './Tabs/Tabs';
 import Tabbar from './Tabbar/Tabbar';
 import TabBadge from './Tabs/TabBadge';
-import EntriesSection from './EntriesSection/EntriesSection';
+import Entry from './Entry/Entry';
 import { Fragment } from 'react';
 import Divider from './Divider/Divider';
 
-export default function Entries() {
+export default function EntriesSection() {
   return (
     <>
       <Tabbar>
@@ -21,11 +21,7 @@ export default function Entries() {
       {entries.map((entry, index) => {
         return (
           <Fragment key={entry.id}>
-            <EntriesSection
-              date={entry.date}
-              motto={entry.motto}
-              notes={entry.notes}
-            />
+            <Entry date={entry.date} motto={entry.motto} notes={entry.notes} />
             {index === entries.length - 1 ? '' : <Divider />}
           </Fragment>
         );
