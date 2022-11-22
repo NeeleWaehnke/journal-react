@@ -12,11 +12,11 @@
   box-sizing: border-box;
 }
 
-body {
+#root {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
   width: 80%;
-  height: 99vh;
+
   align-content: center;
 }
