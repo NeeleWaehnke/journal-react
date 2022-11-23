@@ -5,8 +5,10 @@ import TabBadge from './Tabs/TabBadge';
 import Entry from './Entry/Entry';
 import { Fragment } from 'react';
 import Divider from './Divider/Divider';
+import useLocalStorageState from 'use-local-storage-state';
 
 export default function EntriesSection() {
+ 
   return (
     <>
       <Tabbar>
