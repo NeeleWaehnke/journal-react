@@ -1,5 +1,6 @@
 import './Entry.css';
 import FavouriteButton from '../FavouriteButton/FavouriteButton';
+import styled from 'styled-components';
 
 export default function Entry({ date, motto, notes }) {
   return (
