@@ -1,8 +1,9 @@
-import './Main.css';
 import Entryform from '../Entry-form/Entryform';
 import EntriesSection from '../Entries-Section/EntriesSection';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
+import Divider from '../Entries-Section/Divider/Divider';
+import styled from 'styled-components';
 
 export default function Main() {
   const [entries, setEntries] = useState(initialEntries);
@@ -15,10 +16,11 @@ export default function Main() {
   }
 
   return (
-    <main className="main">
+    <StyledMain className="main">
       <Entryform onAddEntry={handleAddEntry} />
+      <Divider></Divider>
       <EntriesSection entries={entries} />
-    </main>
+    </StyledMain>
   );
 }
 
@@ -51,3 +53,9 @@ const initialEntries = [
     notes: 'My React-ion when I learned about React: 😍',
   },
 ];
+
+const StyledMain = styled.main`
+  display: block;
+  width: 80%;
+  margin: auto;
+`;
