@@ -58,4 +58,5 @@ const StyledMain = styled.main`
   display: block;
   width: 80%;
   margin: auto;
+  font-family: 'Quicksand';
 `;

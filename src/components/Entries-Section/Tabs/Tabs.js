@@ -21,6 +21,7 @@ const StyledTab = styled.button`
   margin: -10px -16px;
   padding: 10px 16px;
   border-radius: 999px;
+  font-family: 'Quicksand';
 
   &:hover {
     background-color: #848586;
@@ -29,7 +30,6 @@ const StyledTab = styled.button`
   &:active {
     background-color: #848586;
   }
-
   .tab--active {
     color: #c2847a;
   }

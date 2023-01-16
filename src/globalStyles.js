@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
 body{
   background-color:#f9f4ec;
-  
+  width: 100%;
   margin: 0;
 }
 
@@ -19,10 +19,9 @@ body{
 }
 
 #root {
-  margin-left: auto;
-  margin-right: auto;
+  
   border: 1px solid black;
-  width: 80%;
+  width: 100%;
   background-color:#efdfdc;
   align-content: center;
   

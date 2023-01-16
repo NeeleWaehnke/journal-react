@@ -14,11 +14,11 @@ const StyledBadge = styled.span`
   padding: 2px 9px;
   border-radius: 999px;
   background-color: #848586;
-  color: #eee0cb;
+  color: #f9f4ec;
   font-weight: 400;
 
   .badge--active {
     background-color: #c2847a;
-    color: #eee0cb;
+    color: #f9f4ec;
   }
 `;

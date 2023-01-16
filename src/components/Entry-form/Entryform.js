@@ -16,24 +16,31 @@ export default function Entryform({ onAddEntry }) {
   return (
     <>
       <StyledForm action="" className="form" onSubmit={handleSubmit}>
-        <h2 className="entryform__title">New Entry</h2>
-        <label htmlFor="input__text" className="label">
+        <StyledHeading className="entryform__title">New Entry</StyledHeading>
+        <StyledLabel htmlFor="input__text" className="label">
           Motto:
-        </label>
-        <input type="text" id="motto" name="motto" className="input__text" />
-        <label htmlFor="input__textarea" className="label">
+        </StyledLabel>
+        <StyledInput
+          type="text"
+          id="motto"
+          name="motto"
+          className="input__text"
+          required
+        />
+        <StyledLabel htmlFor="input__textarea" className="label">
           Notes:
-        </label>
-        <textarea
+        </StyledLabel>
+        <StyledTextarea
           name="notes"
           id="notes"
           className="input__textarea"
           cols="30"
           rows="10"
-        ></textarea>
-        <button type="submit" id="form__button" className="form__button">
+          required
+        ></StyledTextarea>
+        <StyledButton type="submit" id="form__button" className="form__button">
           Create
-        </button>
+        </StyledButton>
       </StyledForm>
     </>
   );
@@ -42,28 +49,49 @@ export default function Entryform({ onAddEntry }) {
 const StyledForm = styled.form`
   display: block;
   font-family: 'Quicksand';
-  .input__text {
-    display: block;
-    width: 100%;
-    margin: 1em 0 2em 0;
-    background-color: #f9f4ec;
-    border: 0.5px solid #efdfdc;
-    border-radius: 5px;
-  }
+`;
+const StyledInput = styled.input`
+  display: block;
+  width: 100%;
+  margin: 1em 0 2em 0;
+  background-color: #f9f4ec;
+  border: 0.5px solid #efdfdc;
+  border-radius: 5px;
+  height: 2em;
 
-  .input__textarea {
-    background-color: #f9f4ec;
-    border: 0.5px solid #efdfdc;
-    display: block;
-    width: 100%;
-    margin: 1em 0 2em 0;
-    border-radius: 5px;
+  &:focus {
+    outline: 2px solid #c2847a;
   }
-  h2 {
-    font-family: 'Quicksand';
-    text-align: center;
+`;
+const StyledTextarea = styled.textarea`
+  background-color: #f9f4ec;
+  border: 0.5px solid #efdfdc;
+  display: block;
+  width: 100%;
+  margin: 1em 0 2em 0;
+  border-radius: 5px;
+  &:focus {
+    outline: 2px solid #c2847a;
   }
-  .label {
-    font-size: 17px;
-  }
+`;
+
+const StyledHeading = styled.h2`
+  font-family: 'Quicksand';
+  text-align: center;
+`;
+
+const StyledLabel = styled.label`
+  font-size: 17px;
+`;
+
+const StyledButton = styled.button`
+  margin-bottom: 4%;
+  background-color: #c2847a;
+  border: 1px solid #c2847a;
+  border-radius: 5px;
+  color: #f9f4ec;
+  font-size: 1em;
+  position: relative;
+  left: 40%;
+  font-family: 'Quicksand';
 `;
