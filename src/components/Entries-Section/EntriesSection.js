@@ -1,4 +1,3 @@
-import './EntriesSection.css';
 import Tabs from './Tabs/Tabs';
 import Tabbar from './Tabbar/Tabbar';
 import TabBadge from './Tabs/TabBadge';

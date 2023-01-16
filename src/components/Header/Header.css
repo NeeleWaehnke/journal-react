@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'Quicksand-Medium';
-  src: url('../../assets/Quicksand/static/Quicksand-Medium.ttf');
-}
-
-h1 {
-  border: 1px solid black;
-  font-family: Quicksand-Medium;
-}

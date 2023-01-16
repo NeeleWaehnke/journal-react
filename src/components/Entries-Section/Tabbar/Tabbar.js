@@ -1,9 +1,15 @@
-import './Tabbar.css';
+import styled from 'styled-components';
 
 export default function Tabbar({ children }) {
   return (
     <>
-      <div className="tabbar">{children}</div>
+      <StyledTabbar className="tabbar">{children}</StyledTabbar>
     </>
   );
 }
+
+const StyledTabbar = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 32px;
+`;
